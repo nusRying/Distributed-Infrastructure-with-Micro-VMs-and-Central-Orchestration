@@ -1,0 +1,3 @@
+CREATE USER vmm_user WITH PASSWORD 'Umair@825';
+CREATE DATABASE vmm_db OWNER vmm_user;
+ALTER USER vmm_user WITH SUPERUSER;
