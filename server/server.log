@@ -1,0 +1,28 @@
+INFO:     Started server process [12359]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51836 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51844 - "POST /node/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51856 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51868 - "POST /task/vm-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51876 - "GET /job/b2165228-f5a5-4649-898d-d4cddc71a80e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54234 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54248 - "POST /node/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54258 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54264 - "POST /task/vm-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57914 - "GET /job/915ff64b-9a82-4b6a-ae25-9136987fdbe0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42566 - "GET /api/analytics/usage HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42568 - "GET /api/api_keys/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42566 - "GET /api/analytics/usage HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42568 - "GET /api/api_keys/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42568 - "GET /audit/history HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42566 - "GET /audit/history HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41084 - "GET /api/analytics/usage HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52922 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43888 - "GET /api/analytics/usage HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53872 - "GET /api/analytics/usage HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12359]

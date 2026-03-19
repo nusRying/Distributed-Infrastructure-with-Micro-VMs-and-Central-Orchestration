@@ -1,0 +1,40 @@
+03:44:47 Worker dc4ca5daf3954163b377ea411808b36f: started with PID 12361, version 2.7.0
+03:44:47 Worker dc4ca5daf3954163b377ea411808b36f: subscribing to channel rq:pubsub:dc4ca5daf3954163b377ea411808b36f
+03:44:47 *** Listening on default...
+03:44:47 Worker dc4ca5daf3954163b377ea411808b36f: cleaning registries for queue: default
+03:45:09 default: tasks.process_vm_creation('standard-vm-01', None) (b2165228-f5a5-4649-898d-d4cddc71a80e)
+Starting creation process for VM: standard-vm-01
+Node node-01 (ID: 1) - Score: 90
+Node worker-02 (ID: 2) - Score: 90
+Decision Engine selected Node ID: 1
+Error processing VM standard-vm-01: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_microvms_vm_id"
+DETAIL:  Key (vm_id)=(standard-vm-01) already exists.
+
+[SQL: INSERT INTO microvms (vm_id, node_id, status, vcpus, memory_mb, created_at) VALUES (%(vm_id)s, %(node_id)s, %(status)s, %(vcpus)s, %(memory_mb)s, %(created_at)s) RETURNING microvms.id]
+[parameters: {'vm_id': 'standard-vm-01', 'node_id': 1, 'status': 'provisioning', 'vcpus': 1, 'memory_mb': 512, 'created_at': datetime.datetime(2026, 3, 17, 22, 45, 9, 928991)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+03:45:09 Successfully completed tasks.process_vm_creation('standard-vm-01', None) job in 0:00:00.517809s on worker dc4ca5daf3954163b377ea411808b36f
+03:45:09 default: Job OK (b2165228-f5a5-4649-898d-d4cddc71a80e)
+03:45:09 Result is kept for 500 seconds
+03:46:08 default: tasks.process_vm_creation('test-vm-21147', None) (915ff64b-9a82-4b6a-ae25-9136987fdbe0)
+Starting creation process for VM: test-vm-21147
+Node node-01 (ID: 1) - Score: 90
+Node worker-02 (ID: 2) - Score: 90
+Decision Engine selected Node ID: 1
+[test-vm-21147] Network configured...
+[test-vm-21147] Firecracker instance started on Node 1
+VM test-vm-21147 is successfully running on Node 1
+03:46:14 Successfully completed tasks.process_vm_creation('test-vm-21147', None) job in 0:00:06.775909s on worker dc4ca5daf3954163b377ea411808b36f
+03:46:14 default: Job OK (915ff64b-9a82-4b6a-ae25-9136987fdbe0)
+03:46:14 Result is kept for 500 seconds
+03:59:45 Worker dc4ca5daf3954163b377ea411808b36f: cleaning registries for queue: default
+10:51:22 Worker dc4ca5daf3954163b377ea411808b36f: cleaning registries for queue: default
+11:04:53 Worker dc4ca5daf3954163b377ea411808b36f: cleaning registries for queue: default
+11:18:23 Worker dc4ca5daf3954163b377ea411808b36f: cleaning registries for queue: default
+11:31:53 Worker dc4ca5daf3954163b377ea411808b36f: cleaning registries for queue: default
+11:45:23 Worker dc4ca5daf3954163b377ea411808b36f: cleaning registries for queue: default
+11:58:53 Worker dc4ca5daf3954163b377ea411808b36f: cleaning registries for queue: default
+12:12:23 Worker dc4ca5daf3954163b377ea411808b36f: cleaning registries for queue: default
+12:25:54 Worker dc4ca5daf3954163b377ea411808b36f: cleaning registries for queue: default
+12:39:24 Worker dc4ca5daf3954163b377ea411808b36f: cleaning registries for queue: default
+12:52:54 Worker dc4ca5daf3954163b377ea411808b36f: cleaning registries for queue: default
